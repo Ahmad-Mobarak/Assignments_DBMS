@@ -4,7 +4,7 @@ CREATE TABLE if not exists Products (
   ProductID INT PRIMARY KEY,
   ProductName VARCHAR(50) NOT NULL,
   Price DECIMAL(10, 2) DEFAULT 0.00,
-   FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+  FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
 
 CREATE TABLE if not exists Customers (
